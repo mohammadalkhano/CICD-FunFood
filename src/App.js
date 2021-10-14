@@ -4,7 +4,7 @@ import { Footer } from './components/footer/Footer'
 import './shared/global/Global.css'
 
 function App() {
-  //returns ruting, 
+  
   return (
     <Routing>
       <NavigationBar />
