@@ -14,3 +14,4 @@ export const AboutView = () => {
 
 
 // comment added in AboutView.js
+// 2nd comment
