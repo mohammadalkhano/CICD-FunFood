@@ -1,3 +1,5 @@
+import React from 'react'
+
 export const Recipe = ({ title, image, ingredients, url }) => {
     return (
         <div>
@@ -14,4 +16,4 @@ export const Recipe = ({ title, image, ingredients, url }) => {
     )
 }
 
-export default Recipe
+//export default Recipe
