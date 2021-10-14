@@ -11,3 +11,7 @@ export const AboutView = () => {
         </div>
     )
 }
+
+
+// comment added in AboutView.js
+// 2nd comment
