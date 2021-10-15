@@ -4,6 +4,8 @@ import Recipe from './recipe/Recipe'
 import { useLocation, useHistory } from 'react-router-dom'
 import LoadingImage from '../../shared/images/LoadingImage.gif'
 import UserContext from '../../shared/provider/UserContext'
+import '../../components/footer/Footer'
+
 
 export const HomeView = () => {
 
@@ -75,6 +77,10 @@ export const HomeView = () => {
 			{displayData()}
 			<hr />
 			<div> {name} </div>
+
+		
 		</div>
 	)
 }
+
+export default HomeView
