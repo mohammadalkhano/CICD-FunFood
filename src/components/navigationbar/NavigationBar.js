@@ -15,16 +15,16 @@ export const NavigationBar = () => {
         alt="oops"
       />
 
-      <span className="button" onClick={() => history.push('/AboutView')}>
+      <span className="button" onClick={() => history.push('/Home')}>
         Home
       </span>
-      <span className="button" onClick={() => history.push('/Recipe')}>
+      <span className="button" onClick={() => history.push('/Recipes')}>
         Recipes
       </span>
-      <span className="button" onClick={() => history.push('/AboutView')}>
+      <span className="button" onClick={() => history.push('/About')}>
         About
       </span>
-      <span className="button" onClick={() => history.push('/ContactView')}>
+      <span className="button" onClick={() => history.push('/Contact')}>
         Contact
       </span>
     </div>

@@ -32,11 +32,11 @@ body {
 }
 
 .recipes{
-    /*display: flex;
+    display: flex;
     justify-content: auto;
     flex-wrap: wrap;
     border-radius: 30%;
     padding: 5px 5px;
     margin: 20px;
-    align-self: center;*/
+    align-self: center;
 }
