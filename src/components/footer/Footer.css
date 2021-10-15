@@ -1,6 +1,6 @@
 .footer{
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: rgb(162, 198, 204);
     position: fixed;
     bottom: 0;
@@ -8,3 +8,14 @@
     width: 100%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
+  .footer:hover {
+    opacity: 0.7;
+}
+.footer-instagram {
+  background: #125688;
+  color: white;
+}
+.footer-linkedin {
+  background: #007bb5;
+  color: white;
+}
