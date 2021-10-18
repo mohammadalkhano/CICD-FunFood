@@ -8,6 +8,7 @@ export const AboutView = () => {
     return (
     <div>
       <h2>Denna sida är för hemma kockar som behöver lite inspiration!</h2>
+      <h4>Enkla, snabba och festliga recept. Allt från festmat till pannkakor, kladdkaka och vegetarisk mat.</h4>
       <div class="row">
         <div class="column">
           <img src={foodLogotype} alt={'..error'}/>
@@ -18,7 +19,6 @@ export const AboutView = () => {
         <div class="column">
           <img src={foodLogotype2} alt={'..error'}/>
         </div>
-        <h3>Enkla, snabba och festliga recept. Allt från festmat till pannkakor, kladdkaka och vegetarisk mat.</h3>
         <h4>Gå till Search där du enkelt anger de ingredienser du har hemma 
         med resultat av flertal olika lätt lagade och goda recept.</h4>
       </div>
