@@ -16,7 +16,9 @@ function MobileNavigationBar() {
                 className="LogoType"
                 src={LogoType}
                 alt="oops" /> 
-            <FontAwesomeIcon icon={faBars}/>
+              <div className="navbar-mobile-burger-icon">
+                <FontAwesomeIcon icon={faBars}/>
+              </div>  
     </div>
    
 </div>

@@ -14,3 +14,13 @@
     grid-column: 1;
     margin: 2vw;
   }
+  .navbar-mobile-burger-icon {
+    color: #fff;
+    font-size: 3rem;
+    grid-column: 5;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    font-size: 10vw;
+    z-index: 500;
+  }
