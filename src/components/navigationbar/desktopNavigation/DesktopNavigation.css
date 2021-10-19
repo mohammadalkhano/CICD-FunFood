@@ -1,0 +1,27 @@
+.NavigationBarWrapper {
+    display: grid;
+    background-color: #83AF5A;
+    box-shadow: rgb(124, 124, 124) 0px 6px 6px;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.LogoType {
+    width: 60px;
+}
+
+.LogoType, .navbar-disktop-item-1, .navbar-disktop-item-2, .navbar-disktop-item-3,.navbar-disktop-item-4{
+    align-self: center;
+    margin: 2vw;
+}
+.navbar-disktop-item-1{
+    grid-column: 7/8
+}
+
+.navbar-disktop-item-1, .navbar-disktop-item-2, .navbar-disktop-item-3,.navbar-disktop-item-4 {
+    font-size: 130%;
+    color: #354046;
+  }
+
+  span:hover {
+      color: white;
+  }

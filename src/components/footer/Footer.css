@@ -1,10 +1,17 @@
 .footer{
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: rgb(162, 198, 204);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  padding: 7vw 0;
+
+  margin: auto;
+  width: 100vw;
+  height: 8vw;
+  justify-content: space-evenly;
+    padding: 0.1rem;
+    background-color: #83af5a;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+  }
+  .all-rights {
+    color: #354046;
+    font-size: 2.5vw;
+    margin-bottom: 2vw;
   }

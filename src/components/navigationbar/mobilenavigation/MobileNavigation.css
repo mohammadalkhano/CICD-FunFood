@@ -1,0 +1,27 @@
+.navbar-mobile-wrapper {
+    width: 100%;
+
+  }
+
+  .navbar-mobile-logo {
+    background-color: #83AF5A;
+    box-shadow: rgb(124, 124, 124) 0px 6px 6px;
+    display: grid;
+  }
+  
+  .navbar-mobile-logo img {
+    width: 15vw;
+    grid-column: 1;
+  }
+  .navbar-mobile-burger-icon {
+    color: #fff;
+    grid-column: 5;
+    align-self: center;
+    font-size: 10vw;
+  }
+.navbar-mobile-menu span {
+  display: grid;
+  color: #354046;
+  font-size: 130%;
+  margin: 4vw;
+}
