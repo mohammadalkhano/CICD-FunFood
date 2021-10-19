@@ -2,7 +2,7 @@ import React from 'react'
 import './DesktopNavigation.css'
 import { useHistory } from 'react-router-dom'
 import LogoType from '../../../shared/images/logotype.png'
-
+import RoutingPath from '../../../routes/RoutingPath'
 
 export const DesktopNavigation = () => {
    
@@ -10,13 +10,13 @@ export const DesktopNavigation = () => {
 
     return (
         <div className="NavigationBarWrapper">
-            <img onClick={() => history.push('/')}
-                className="LogoType"
-                src={LogoType}
-                alt="oops" />
-            <span className="aboutButton" onClick={() => history.push('/AboutView')}>About</span>
-            <span className="contactButton" onClick={() => history.push('/ContactView')}>Contact</span>
-         
+            <img onClick={() => history.push(RoutingPath.homeView)} className="LogoType" src={LogoType} alt="FunFood" />
+                    <span className="navbar-disktop-item-1" onClick={() => history.push(RoutingPath.homeView)} >Home</span>
+                    <span className="navbar-disktop-item-2" onClick={() => history.push(RoutingPath.resipesView)} >Resipes</span>
+                    <span className="navbar-disktop-item-3" onClick={() => history.push(RoutingPath.contactView)} >Contact</span>
+                    <span className="navbar-disktop-item-4" onClick={() => history.push(RoutingPath.aboutView)} >About</span>
+                    
+
         </div>
     )
 }

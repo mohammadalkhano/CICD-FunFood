@@ -2,24 +2,24 @@
     display: grid;
     background-color: #83AF5A;
     box-shadow: rgb(124, 124, 124) 0px 6px 6px;
-    display: grid;
-    grid-template: auto / auto;
     grid-template-columns: repeat(10, 1fr);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .LogoType {
-    width: 80px;
+    width: 60px;
 }
 
-.LogoType, .aboutButton, .contactButton {
+.LogoType, .navbar-disktop-item-1, .navbar-disktop-item-2, .navbar-disktop-item-3,.navbar-disktop-item-4{
     align-self: center;
-    cursor: pointer;
     margin: 2vw;
 }
+.navbar-disktop-item-1{
+    grid-column: 7/8
+}
 
-.aboutButton:hover, .contactButton:hover {
+.navbar-disktop-item-1, .navbar-disktop-item-2, .navbar-disktop-item-3,.navbar-disktop-item-4 {
     font-size: 130%;
+    color: #354046;
   }
 
   span:hover {
