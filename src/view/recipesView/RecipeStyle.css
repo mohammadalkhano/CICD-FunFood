@@ -1,5 +1,27 @@
 .recipes{
-    background-color: #f08256;
-    background-image: linear-gradient(315deg, #f08256 0%, #f9b098 74%);
-    
+     background-color: #ffffff;
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #f6f5f5 74%);
+     
+     display: grid;
+     grid-template-columns: repeat(6, 10fr);
+     grid-template-rows: repeat(6,10em);
+
 }
+.search-btn{
+    grid-column-start: 3;
+    grid-column-end: 6;  
+    grid-row-start: 1;
+  grid-row-end: 2;  
+}
+.item1{
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.item2{
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
