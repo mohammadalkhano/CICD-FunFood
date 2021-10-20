@@ -3,15 +3,14 @@
     background-image: linear-gradient(315deg, #f6f6f6 0%, #f6f5f5 74%);
      
      display: grid;
-     grid-template-columns: repeat(6, 10fr);
-     grid-template-rows: repeat(6,10em);
-
+     grid-template-columns: repeat(0, 1fr);
+     
 }
 .search-btn{
     grid-column-start: 3;
     grid-column-end: 6;  
     grid-row-start: 1;
-  grid-row-end: 2;  
+    grid-row-end: 2;  
 }
 .item1{
   grid-column-start: 2;

@@ -1,15 +1,13 @@
-import './RecipeStyle.css';
+//import './RecipeStyle.css';
 import React, { useContext, useEffect, useState } from 'react';
 import { useLocation, useHistory } from 'react-router-dom';
 import LoadingImage from '../../shared/images/LoadingImage.gif';
 import UserContext from '../../shared/provider/UserContext';
-import { CardTemp } from './card/CardTemp';
 import { Search } from './searh/Search';
 import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid3x3 } from '@mui/icons-material';
 
 export const RecipeView = ({ title, image, ingredients, url }) => {
+  const [value,setValue]= useState("Find your recipes");
   const history = useHistory();
   const location = useLocation();
   const APP_ID = '5ac39ccd';
@@ -20,12 +18,7 @@ export const RecipeView = ({ title, image, ingredients, url }) => {
   const [loading, setLoading] = useState();
   const [serverData, setServerData] = useState();
   const name = useContext(UserContext);
-  const useStyle = makeStyles({
-    gridContiner: {
-      paddingLeft: '40px',
-      paddingRight: '40px',
-    },
-  });
+  
 
   useEffect(() => {
     getRecipes();
@@ -59,11 +52,12 @@ export const RecipeView = ({ title, image, ingredients, url }) => {
         <div className="recipes1">
           {recipes.map((recipe) => (
             <RecipeView
-              key={recipe.recipe.label}
+              
               title={recipe.recipe.label}
               image={recipe.recipe.image}
               ingredients={recipe.recipe.ingredients}
               url={recipe.recipe.url}
+              
             />
           ))}
         </div>
@@ -72,21 +66,33 @@ export const RecipeView = ({ title, image, ingredients, url }) => {
       return <img src={LoadingImage} alt={'error !'} />;
     }
   };
-  const classes = useStyle();
+  
 
   return (
     <div className="recipes">
       <Grid item className="search-btn">
         <Search></Search>
       </Grid>
+
+
+
+
+
       {/* <Grid container> */}
       <Grid item className="item1">
-        <CardTemp />
+        {/* { <Recipe></Recipe> } */}
       </Grid>
+
+
+
+
+
+
       <Grid item className="item2">
-        <CardTemp />
+        {/* <Recipe /> */}
       </Grid>
       {/* </Grid> */}
+      
     </div>
   );
 };
