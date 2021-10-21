@@ -14,6 +14,8 @@ export const NavigationBar = () => {
     return (
         <div>
             {displayNavigation()}
+
         </div>
+        
     )
 }
