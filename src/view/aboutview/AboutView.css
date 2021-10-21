@@ -4,7 +4,34 @@
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
-  width: 29.33%;
+  width: 30%;
+}
+.div1 {
+  display: flex;
+  align-items: center;
+}
+.div2 {
+  display: flex;
+  align-items: center;
+}
+.div3 {
+  display: flex;
+  align-items: center;
+}
+.img1 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 5px;
+}
+.img2 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 5px;
+}
+.img3 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 5px;
 }
 h3,
 h4 {
@@ -19,26 +46,19 @@ h4 {
 }
 h3 {
   font-size: 32px;
+  line-height: 2;
 }
-.div1 {
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 1;
-  grid-row-end: 2;
+.h41 {
+  text-align: justify;
 }
-.div2 {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.h42 {
+  text-align: justify;
 }
-.div3 {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 2;
-  grid-row-end: 3;
+.h43 {
+  text-align: justify;
 }
 .h44 {
+  text-align: center;
   color: #627c4a;
 }
 .jump-to-top {
