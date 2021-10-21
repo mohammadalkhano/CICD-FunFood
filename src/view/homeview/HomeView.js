@@ -5,6 +5,8 @@ import { useLocation, useHistory } from 'react-router-dom'
 import LoadingImage from '../../shared/images/LoadingImage.gif'
 import UserContext from '../../shared/provider/UserContext'
 import '../../components/footer/Footer'
+import foodPic from '../../shared/images/foodPic.jpeg'
+
 
 
 export const HomeView = () => {
@@ -66,19 +68,15 @@ export const HomeView = () => {
 	}
 
 	return (
-		<div>
-			<p> Hi User, please types in any ingredient in the Search Box, and the recipes with that ingredient would be reflected below</p>
-			<div className="Homepage">
-				<form onSubmit={getSearch} className="searchform">
-					<input classname="searchbar" type="text" value={search} onChange={updateSearch} />
-					<button className="searchbutton" type="submit" >Search  </button>
-				</form>
+		<div className="content-wrapper">
+			<img src={foodPic} alt={'..error'} />
+			<div className="text-wrapper">
+			<h3> 
+			Welcome to FunFood !! <br/> <br/> Dear User, kindly visit our 'Recipes Page' to have a look at some of the best recipes from across the world.
+			<br/> <br/>Please contact us with your valuable feedback to help us improve.
+			</h3>
 			</div>
-			{displayData()}
-			<hr />
-			<div> {name} </div>
-
-		
+					
 		</div>
 	)
 }
