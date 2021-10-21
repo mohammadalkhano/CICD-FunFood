@@ -9,6 +9,7 @@ import InputAdornment from "@material-ui/core/InputAdornment";
 import SearchIcon from "@material-ui/icons/Search";
 
 
+
 export const Search=()=> {
     const value= "Find your recipes";
 	const APP_ID = '5ac39ccd'
@@ -59,7 +60,7 @@ export const Search=()=> {
 		}
 
 		else {
-			return <div>{ProgressBar}</div>
+			return <div><ProgressBar/></div>
 
 		}
 	}

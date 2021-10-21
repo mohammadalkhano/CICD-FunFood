@@ -36,7 +36,6 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
     <div>
       <Card>
         <CardHeader
-          
           avatar={
             <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
               R

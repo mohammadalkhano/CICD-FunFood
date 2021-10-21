@@ -6,7 +6,7 @@ import UserContext from '../../shared/provider/UserContext';
 import { Search } from './searh/Search';
 import Grid from '@material-ui/core/Grid';
 
-export const RecipeView = ({ title, image, ingredients, url }) => {
+export const RecipeView = () => {
   // const [value,setValue]= useState("Find your recipes");
   // const history = useHistory();
   // const location = useLocation();
@@ -69,9 +69,11 @@ export const RecipeView = ({ title, image, ingredients, url }) => {
   
 
   return (
-    <div className="recipes">
-      <Grid item className="search-btn">
+    <div className="recipe">
+      <Grid container spacing={3} className="search-btn">
+      <Grid item xs={12} sm={4}>
         <Search></Search>
+        </Grid>
       </Grid>
       
     </div>
