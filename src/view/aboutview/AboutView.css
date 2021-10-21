@@ -18,20 +18,33 @@
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 320px) {
+  .div1,
+  .div2,
+  .div3 {
+    font-size: 12px;
+  }
+}
 .img1 {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
+  max-width: 50%;
+  height: auto;
 }
 .img2 {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
+  max-width: 50%;
+  height: auto;
 }
 .img3 {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
+  max-width: 50%;
+  height: auto;
 }
 h3,
 h4 {
@@ -47,15 +60,6 @@ h4 {
 h3 {
   font-size: 32px;
   line-height: 2;
-}
-.h41 {
-  text-align: justify;
-}
-.h42 {
-  text-align: justify;
-}
-.h43 {
-  text-align: justify;
 }
 .h44 {
   text-align: center;
