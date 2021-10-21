@@ -6,6 +6,7 @@ import { ContactView } from '../view/contactview/ContactView'
 import RoutingPath from './RoutingPath'
 import { Footer } from '../components/footer/Footer'
 
+
 export const Routing = (props) => {
     return (
         <Router>
