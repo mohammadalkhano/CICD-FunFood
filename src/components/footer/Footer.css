@@ -1,17 +1,13 @@
 .footer{
-  padding: 7vw 0;
-
-  margin: auto;
-  width: 100vw;
   height: 8vw;
-  justify-content: space-evenly;
-    padding: 0.1rem;
-    background-color: #83af5a;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-  }
+  width: 100%;
+  background-color: #83af5a;
+}
   .all-rights {
     color: #354046;
-    font-size: 2.5vw;
-    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+    line-height: 8vw;
+
   }
+  
