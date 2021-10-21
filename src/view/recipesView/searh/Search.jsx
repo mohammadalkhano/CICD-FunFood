@@ -1,28 +1,22 @@
 import * as React from 'react';
 import { useContext, useEffect, useState } from 'react'
-import { useLocation, useHistory } from 'react-router-dom'
-import {UserContext} from '../../../shared/provider/UserContext'
 import {Recipe} from '../recipe/Recipe'
+import {ProgressBar} from '../../../components/progressBar/ProgressBar'
 import TextField from '@mui/material/TextField';
 import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 //TODO: USE PROGRESS INSTEAD FOR GIF IMAGE
-import LoadingImage from '../../../shared/images/LoadingImage.gif'
 import SearchIcon from "@material-ui/icons/Search";
 
 
 export const Search=()=> {
     const value= "Find your recipes";
-    const history = useHistory()
-	const location = useLocation()
 	const APP_ID = '5ac39ccd'
 	const APP_KEY = '36ce344a8e3b488843d7a5a4f3e8b215'
 	const [recipes, setRecipes] = useState([])
 	const [search, setSearch] = useState('')
 	const [query, setQuery] = useState('chiken')
 	const [loading, setLoading] = useState()
-	const [serverData, setServerData] = useState()
-	const name = useContext(UserContext)
 
 	useEffect(() => {
 		getRecipes()
@@ -65,7 +59,7 @@ export const Search=()=> {
 		}
 
 		else {
-			return <img src={LoadingImage} alt={'error !'} />
+			return <div>{ProgressBar}</div>
 
 		}
 	}
