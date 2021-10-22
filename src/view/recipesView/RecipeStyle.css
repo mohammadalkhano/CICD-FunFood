@@ -1,9 +1,13 @@
 .recipe{
-     background-color: #ffffff;
+     /* background-color: #ffffff;
     background-image: linear-gradient(315deg, #f6f6f6 0%, #f6f5f5 74%);
      
      display: grid;
      grid-template-columns: repeat(0, 1fr);
+     grid-auto-columns: 400px; */
+    
+  
+    
      
 }
 .search-btn{
