@@ -1,0 +1,23 @@
+.NavigationBarWrapper {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: rgb(162, 198, 204);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.LogoType {
+    width: 80px;
+}
+
+.LogoType, .button {
+    align-self: center;
+    cursor: pointer;
+}
+
+.button:hover:hover {
+    font-size: 130%;
+  }
+
+  span:hover {
+      color: white;
+  }
