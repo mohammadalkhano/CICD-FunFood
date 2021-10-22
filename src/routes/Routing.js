@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeView } from '../view/homeview/HomeView'
 import { AboutView } from '../view/aboutview/AboutView'
 import { ContactView } from '../view/contactview/ContactView'
+import { RecipeView } from '../view/recipesView/RecipeView';
 import RoutingPath from './RoutingPath'
 import { Footer } from '../components/footer/Footer'
 
@@ -13,6 +14,7 @@ export const Routing = (props) => {
             {props.children}
             <Switch>
                 <Route exact path={RoutingPath.homeView} component={HomeView} />
+                <Route exact path={RoutingPath.recipesView} component={RecipeView} />
                 <Route exact path={RoutingPath.aboutView} component={AboutView} />
                 <Route exact path={RoutingPath.contactView} component={ContactView} />
             </Switch>
@@ -20,3 +22,4 @@ export const Routing = (props) => {
         </Router>
     )
 }
+
