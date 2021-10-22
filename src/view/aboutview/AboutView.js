@@ -11,7 +11,7 @@ export const AboutView = () => {
         med mat för alla tillfällen.</h3>
 
       <div class="div1">
-        <img class = "img1" src={foodLogotype} alt={'..error'}/>                    
+        <img class = "img" src={foodLogotype} alt={'..error'}/>                    
         <h4 class="h41">Välj bland våra receptfavoriter och dela vår 
                       passion för den godaste maten. Här finns middagstips, 
                       goda bakverk, mättande mellis och festmenyer. 
@@ -25,7 +25,7 @@ export const AboutView = () => {
       </div>
 
       <div class="div2">
-        <img class = "img2" src={foodLogotype1} alt={'..error'}/>
+        <img class = "img" src={foodLogotype1} alt={'..error'}/>
         <h4 class="h42">God mat, helt enkelt. Det ska vara enkelt att laga  
                         god mat, det har vi alltid tyckt.
                         Oavsett om du letar efter tips på en snabb lunchrätt  
@@ -41,7 +41,7 @@ export const AboutView = () => {
       </div>
 
       <div class="div3">
-        <img class = "img3" src={foodLogotype2} alt={'..error'}/>
+        <img class = "img" src={foodLogotype2} alt={'..error'}/>
         <h4 class="h43">FunFood samlar tusentals favoritrecept från  
                       Aller Medias tidningar tillsammans med helt  
                       nyutvecklade recept. Har du kycklingfiléer 
