@@ -1,19 +1,5 @@
-.img1,
-.img2,
-.img3 {
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 5px;
-  width: 30%;
-}
-.div1 {
-  display: flex;
-  align-items: center;
-}
-.div2 {
-  display: flex;
-  align-items: center;
-}
+.div1,
+.div2,
 .div3 {
   display: flex;
   align-items: center;
@@ -25,27 +11,14 @@
     font-size: 12px;
   }
 }
-.img1 {
+.img {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
-  max-width: 50%;
   height: auto;
+  width: 30%;
 }
-.img2 {
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 5px;
-  max-width: 50%;
-  height: auto;
-}
-.img3 {
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  padding: 5px;
-  max-width: 50%;
-  height: auto;
-}
+
 h3,
 h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
