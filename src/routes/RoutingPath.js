@@ -1,14 +1,13 @@
-const homeView = "/"
-const aboutView = "/about"
-const contactView = "/contact"
-const recipesView = "/recipes"
+const homeView = '/';
+const aboutView = '/about';
+const contactView = '/contact';
+const recipeView = '/recipe';
 
 const RoutingPath = {
-    homeView,
-    aboutView,
-    contactView,
-    recipesView,
-}
+  homeView,
+  recipeView,
+  aboutView,
+  contactView,
+};
 
-export default RoutingPath
-
+export default RoutingPath;

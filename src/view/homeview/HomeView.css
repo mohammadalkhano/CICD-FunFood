@@ -1,23 +1,35 @@
-body {
-  font-style: oblique;
-  min-height: 100px;
+
+/* body{
+  width: 100%;
+  height: auto;
+  overflow:hidden;
+
+} */
+.content-wrapper{
+width:100%;
+margin:20px 20px 10px 20px;
+
 }
-.searchform {
-  min-height: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.content-wrapper img{  
+  width:95%;
+ 
 }
 
-.searchbar {
-  width: 40%;
-  padding: 10px;
-  border: none;
-  color: grey;
+.text-wrapper{
+  position: relative;
+  width:100%;
+  margin-top: -40%;
 }
+.text-wrapper h3{
+  text-align: center;
+  text-shadow: 2px 1px 1px brown ;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ letter-spacing: 1.15px;
+ font-size:x-large;
+ margin-top: 15%;
+ 
+  }
 
-.searchbutton {
-  background: rgb(162, 198, 204);
-  padding: 5px 5px;
-  color: black;
+h3:hover{
+  color:grey;  
 }

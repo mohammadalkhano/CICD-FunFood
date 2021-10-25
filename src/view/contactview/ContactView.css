@@ -1,0 +1,32 @@
+.img1 {
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 5px;
+  max-width: 60%;
+  height: auto;
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2,
+h4,
+h5 {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: black;
+  line-height: 1.8;
+}
+h2,
+h4 {
+  font-weight: 700;
+  font-weight: bold;
+}
+h5 {
+  font-size: 95%;
+}
+h2 {
+  font-size: 200%;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 25px #83af5ab7;
+}
