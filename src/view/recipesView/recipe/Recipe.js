@@ -14,14 +14,13 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { green } from 'kleur';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
 })(({ theme, expand }) => ({
   transform: !expand ? 'rotate(0deg)' : 'rotate(180deg)',
-  marginLeft: 'auto',
+  marginLeft: '50px',
   transition: theme.transitions.create('transform', {
     duration: theme.transitions.duration.shortest,
   }),
@@ -38,12 +37,11 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
       <Card>
         <CardHeader
           sx={{
-            
             ':hover': { color: 'orange' },
           }}
           avatar={
             <Avatar //Profile
-              sx={{ bgcolor: green }}
+              sx={{ bgcolor: '#83af5a' }}
               onClick={(e) => {
                 e.preventDefault();
                 window.location.href = url;

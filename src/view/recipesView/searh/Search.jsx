@@ -68,8 +68,8 @@ export const Search=()=> {
 	}
   return (
     <div className={classes}>
-		<Grid container spacing = {13}>
-			<Grid item xs ={5}>
+		<Grid container spacing = {3}>
+			<Grid item xs ={10}>
                <TextField onChange={updateSearch}
        				id="standard-bare"        
         			variant="filled"
@@ -84,7 +84,9 @@ export const Search=()=> {
      			)}}
     /> 
 	 	</Grid>
-		 <Grid item xs ={5}> {displayData()}</Grid>
+		 <Grid item xs ={4}> 
+		      {displayData()}
+		 </Grid>
 	 </Grid>
     </div>
     
