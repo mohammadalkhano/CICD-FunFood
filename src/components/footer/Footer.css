@@ -1,5 +1,8 @@
 .footer{
-  height: 8vw;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 5vw;
   width: 100%;
   background-color: #83af5a;
 }
@@ -7,7 +10,7 @@
     color: #354046;
     font-size: 2vw;
     text-align: center;
-    line-height: 8vw;
+    line-height: 1vw;
 
   }
   
