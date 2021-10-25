@@ -7,6 +7,8 @@ import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 //TODO: USE PROGRESS INSTEAD FOR GIF IMAGE
 import SearchIcon from "@material-ui/icons/Search";
+import { classes } from 'istanbul-lib-coverage';
+import { Grid } from '@mui/material';
 
 
 
@@ -65,20 +67,25 @@ export const Search=()=> {
 		}
 	}
   return (
-    <div className="search">
-      <TextField onChange={updateSearch}
-        id="standard-bare"        
-        variant="filled"
-        label={value}
-        InputProps={{
-       endAdornment: (
-      <InputAdornment >
-        <IconButton  >
-          <SearchIcon onClick={getSearch} />
-        </IconButton>
-      </InputAdornment>
-     )}}
-     />  {displayData()}
+    <div className={classes}>
+		<Grid container spacing = {13}>
+			<Grid item xs ={5}>
+               <TextField onChange={updateSearch}
+       				id="standard-bare"        
+        			variant="filled"
+        			label={value}
+       				InputProps={{
+      					 endAdornment: (
+     			 <InputAdornment >
+       				 <IconButton  >
+        			   <SearchIcon onClick={getSearch} />
+       				 </IconButton>
+      			 </InputAdornment>
+     			)}}
+    /> 
+	 	</Grid>
+		 <Grid item xs ={5}> {displayData()}</Grid>
+	 </Grid>
     </div>
     
   );

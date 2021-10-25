@@ -8,11 +8,11 @@ export const RecipeView = () => {
 
   return (
     <div className="recipe">
-      {/* <Grid container spacing={3} className="search-btn">
+      <Grid container spacing={3} className="search-btn">
            <Grid item xs={12} sm={4}>
                
            </Grid>
-      </Grid> */}
+      </Grid>
       <Search></Search>
       
     </div>

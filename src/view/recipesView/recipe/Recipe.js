@@ -14,6 +14,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { green } from 'kleur';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -36,8 +37,19 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
     <div>
       <Card>
         <CardHeader
+          sx={{
+            
+            ':hover': { color: 'orange' },
+          }}
           avatar={
-            <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">
+            <Avatar //Profile
+              sx={{ bgcolor: green }}
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href = url;
+              }}
+              aria-label="recipe"
+            >
               R
             </Avatar>
           }
