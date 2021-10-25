@@ -10,7 +10,7 @@ export const AboutView = () => {
       <h3>FunFood är för hemma kockar som behöver lite inspiration, <br/>
         med mat för alla tillfällen.</h3>
 
-        <div class="div1">
+        <div class="div">
         <img class = "img" src={foodLogotype} alt={'..error'}/>                    
         <h4 class="h">Välj bland våra receptfavoriter och dela vår 
                       passion för den godaste maten. Här finns middagstips, 
@@ -23,7 +23,7 @@ export const AboutView = () => {
                       med passande vin. Alla våra recept är provlagade av våra kockar.
                       Var så god, våra middagsrecept!</h4>
        </div>
-      <div class="div2">
+      <div class="div">
         <img class = "img" src={foodLogotype1} alt={'..error'}/>
         <h4 class="h">God mat, helt enkelt. Det ska vara enkelt att laga  
                         god mat, det har vi alltid tyckt.
@@ -39,7 +39,7 @@ export const AboutView = () => {
                         Bra recept på god mat, helt enkelt.</h4>
       </div>
 
-      <div class="div3">
+      <div class="div">
         <img class = "img" src={foodLogotype2} alt={'..error'}/>
         <h4 class="h">FunFood samlar tusentals favoritrecept från  
                       Medias tidningar tillsammans med helt  

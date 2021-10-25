@@ -1,18 +1,14 @@
-.div1,
-.div2,
-.div3 {
+.div {
   display: flex;
   align-items: center;
 }
-
 .img {
   border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   padding: 5px;
-  max-width: 30%;
+  width: 40%;
   margin-left: auto;
   height: auto;
-  position: relative;
 }
 
 h3,
