@@ -32,7 +32,7 @@ function MobileNavigationBar() {
             ? (<nav className="navbar-mobile-menu-wrapper">
                 <div className="navbar-mobile-menu">
                     <span className="navbar-mobile-item-1" onClick={() => linkNavigation(RoutingPath.homeView)} >Home</span>
-                    <span className="navbar-mobile-item-2" onClick={() => linkNavigation(RoutingPath.resipesView)} >Recipes</span>
+                    <span className="navbar-mobile-item-2" onClick={() => linkNavigation(RoutingPath.recipeView)} >Recipes</span>
                     <span className="navbar-mobile-item-3" onClick={() => linkNavigation(RoutingPath.contactView)} >Contact</span>
                     <span className="navbar-mobile-item-4" onClick={() => linkNavigation(RoutingPath.aboutView)} >About</span>
                 </div>
