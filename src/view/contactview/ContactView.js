@@ -10,7 +10,7 @@ export const ContactView = () => {
     const history = useHistory()
     return (
         <div>
-
+            <br/><br/>
             <h4 class="under_rubrik">För konsumenter</h4>
 
             <img class = "img" src={contactmail} alt={'..error'}/>
@@ -34,6 +34,7 @@ export const ContactView = () => {
 
             <h5>Är du företagskund eller vill du ansöka om att bli kund? <br/><br/>
             Besök FunFoods kundportal eller kontakta FunFood Kundcenter på telefon 077-577 11 77.</h5>
+            <br/><br/><br/><br/>
             
         </div>
 
