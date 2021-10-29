@@ -7,7 +7,6 @@ import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 //TODO: USE PROGRESS INSTEAD FOR GIF IMAGE
 import SearchIcon from "@material-ui/icons/Search";
-import { Grid } from '@mui/material';
 import './Search.css'
 
 
@@ -69,7 +68,7 @@ export const Search=()=> {
 	}
   return (
    
-		<div className='container'>
+		<div className='search-container'>
 			<div className='txt-field' >
                <TextField  onChange={updateSearch}
        				id="standard-bare"        
@@ -86,8 +85,5 @@ export const Search=()=> {
 			 </div>	 	 
 		      {displayData()}		
 	     </div> 
-		
-   
-    
   );
 }
