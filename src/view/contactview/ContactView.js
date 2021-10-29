@@ -10,7 +10,7 @@ export const ContactView = () => {
     const history = useHistory()
     return (
         <div>
-
+            <br/><br/>
             <h4 class="under_rubrik">För konsumenter</h4>
 
             <img class = "img" src={contactmail} alt={'..error'}/>
@@ -18,7 +18,7 @@ export const ContactView = () => {
             <h4> Mail: funfood93@gmail.com </h4>
 
             <h5>FunFood Forum hjälper dig genom att svara på frågor <br/>
-                kring Arlas produkter och kampanjer. </h5>
+                kring FunFoods produkter och kampanjer. </h5>
             
             <img class = "img" src={contactphone} alt={'..error'}/>
 
@@ -34,6 +34,7 @@ export const ContactView = () => {
 
             <h5>Är du företagskund eller vill du ansöka om att bli kund? <br/><br/>
             Besök FunFoods kundportal eller kontakta FunFood Kundcenter på telefon 077-577 11 77.</h5>
+            <br/><br/><br/><br/>
             
         </div>
 
