@@ -7,6 +7,9 @@ import IconButton from "@material-ui/core/IconButton";
 import InputAdornment from "@material-ui/core/InputAdornment";
 //TODO: USE PROGRESS INSTEAD FOR GIF IMAGE
 import SearchIcon from "@material-ui/icons/Search";
+import { Grid } from '@mui/material';
+import './Search.css'
+
 
 
 
@@ -46,7 +49,7 @@ export const Search=()=> {
 	const displayData = () => {
 		if (!loading) {
 			return (
-				<div>
+				<div className='recipe'>
 					{recipes.map(recipe => (
 						<Recipe key={recipe.recipe.label}
 							title={recipe.recipe.label}
@@ -65,21 +68,26 @@ export const Search=()=> {
 		}
 	}
   return (
-    <div className="search">
-      <TextField onChange={updateSearch}
-        id="standard-bare"        
-        variant="filled"
-        label={value}
-        InputProps={{
-       endAdornment: (
-      <InputAdornment >
-        <IconButton  >
-          <SearchIcon onClick={getSearch} />
-        </IconButton>
-      </InputAdornment>
-     )}}
-     />  {displayData()}
-    </div>
+   
+		<div className='container'>
+			<div className='txt-field' >
+               <TextField  onChange={updateSearch}
+       				id="standard-bare"        
+        			variant="filled"
+        			label={value}
+       				InputProps={{
+      					 endAdornment: (
+     			 <InputAdornment >
+       				 <IconButton  >
+        			   <SearchIcon onClick={getSearch} />
+       				 </IconButton>
+      			 </InputAdornment>
+     		 	)}}/>
+			 </div>	 	 
+		      {displayData()}		
+	     </div> 
+		
+   
     
   );
 }
