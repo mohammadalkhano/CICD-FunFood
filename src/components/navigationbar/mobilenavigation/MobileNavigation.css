@@ -1,9 +1,10 @@
+
 .navbar-mobile-wrapper {
     width: 100%;
+    
   }
 
   .navbar-mobile-logo {
-    background-color: #83AF5A;
     box-shadow: rgb(124, 124, 124) 0px 6px 6px;
     display: grid;
     grid-template: auto / auto;

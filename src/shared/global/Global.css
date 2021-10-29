@@ -1,11 +1,7 @@
-body {
-    display: grid;
-    margin: auto;
-    padding: auto;
+*{
+    margin: 0px;
+    padding: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 100%;
-    width: 100%;
 
-    
 }
 
