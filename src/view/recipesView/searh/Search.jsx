@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useContext, useEffect, useState } from 'react'
+import {DisplayRecipe} from '../searh/DisplayRecipe'
 import {Recipe} from '../recipe/Recipe'
 import {ProgressBar} from '../../../components/progressBar/ProgressBar'
 import TextField from '@mui/material/TextField';
@@ -45,27 +46,27 @@ export const Search=()=> {
 		setQuery(search)
 	}
 
-	const displayData = () => {
-		if (!loading) {
-			return (
-				<div className='recipe'>
-					{recipes.map(recipe => (
-						<Recipe key={recipe.recipe.label}
-							title={recipe.recipe.label}
-							cuisineType={recipe.recipe.cuisineType + " cuisine"}
-							image={recipe.recipe.image}
-							ingredients={recipe.recipe.ingredients}
-							url={recipe.recipe.url} />))}
-				</div>
+	// const displayData = () => {
+	// 	if (!loading) {
+	// 		return (
+	// 			<div className='recipe'>
+	// 				{recipes.map(recipe => (
+	// 					<Recipe key={recipe.recipe.label}
+	// 						title={recipe.recipe.label}
+	// 						cuisineType={recipe.recipe.cuisineType + " cuisine"}
+	// 						image={recipe.recipe.image}
+	// 						ingredients={recipe.recipe.ingredients}
+	// 						url={recipe.recipe.url} />))}
+	// 			</div>
 
-			)
-		}
+	// 		)
+	// 	}
 
-		else {
-			return <div><ProgressBar/></div>
+	// 	else {
+	// 		return <div><ProgressBar/></div>
 
-		}
-	}
+	// 	}
+	//}
   return (
    
 		<div className='search-container'>
@@ -83,7 +84,8 @@ export const Search=()=> {
       			 </InputAdornment>
      		 	)}}/>
 			 </div>	 	 
-		      {displayData()}		
+		      {/* {displayData()}		 */}
+			  <DisplayRecipe recipes= {recipes}/>
 	     </div> 
   );
 }

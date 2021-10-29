@@ -19,11 +19,11 @@ import './Recipe.css';
 
 const useStyles = makeStyles({
   continer: {
-    backgroundColor: red,
+    '&:hover': {
+      backgroundColor: 'red',
+    },
   },
-  item: {
-    backgroundColor: red,
-  },
+  item: {},
 });
 
 const ExpandMore = styled((props) => {
@@ -47,6 +47,8 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
   return (
     <Card className={classes.continer} sx={{ maxWidth: 345 }}>
       <CardHeader
+        // style={{ backgroundColor: 'none' }}
+        // sx={{ '&:hover': { backgroundColor: 'transparent' } }}
         avatar={
           <Avatar //Profile
             sx={{ bgcolor: '#83af5a' }}
