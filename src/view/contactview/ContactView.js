@@ -18,7 +18,7 @@ export const ContactView = () => {
             <h4> Mail: funfood93@gmail.com </h4>
 
             <h5>FunFood Forum hjälper dig genom att svara på frågor <br/>
-                kring Arlas produkter och kampanjer. </h5>
+                kring FunFoods produkter och kampanjer. </h5>
             
             <img class = "img" src={contactphone} alt={'..error'}/>
 
