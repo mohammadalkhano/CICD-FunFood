@@ -1,4 +1,4 @@
-const width = 760
+const width = 540
 
 const DesktopMobileBreakpoint =  {
   width
