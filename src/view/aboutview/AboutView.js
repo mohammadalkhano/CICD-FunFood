@@ -10,9 +10,9 @@ export const AboutView = () => {
       <h3>FunFood är för hemma kockar som behöver lite inspiration, <br/>
         med mat för alla tillfällen.</h3>
 
-      <div class="div1">
-        <img class = "img" src={foodLogotype} alt={'..error'}/>                    
-        <h4 class="h41">Välj bland våra receptfavoriter och dela vår 
+        <div class="div">
+        <img class = "aboutimg" src={foodLogotype} alt={'..error'}/>                    
+        <h4 class="h">Välj bland våra receptfavoriter och dela vår 
                       passion för den godaste maten. Här finns middagstips, 
                       goda bakverk, mättande mellis och festmenyer. 
                       Vi har samlat middagstips för så väl jäktiga vardagar 
@@ -22,11 +22,10 @@ export const AboutView = () => {
                       Allt från enkla vardagsrätter till en lyxigare middag 
                       med passande vin. Alla våra recept är provlagade av våra kockar.
                       Var så god, våra middagsrecept!</h4>
-      </div>
-
-      <div class="div2">
-        <img class = "img" src={foodLogotype1} alt={'..error'}/>
-        <h4 class="h42">God mat, helt enkelt. Det ska vara enkelt att laga  
+       </div>
+      <div class="div">
+        <img class = "aboutimg" src={foodLogotype1} alt={'..error'}/>
+        <h4 class="h">God mat, helt enkelt. Det ska vara enkelt att laga  
                         god mat, det har vi alltid tyckt.
                         Oavsett om du letar efter tips på en snabb lunchrätt  
                         eller en festlig finmiddag. Vare sig du är sugen på  
@@ -40,10 +39,10 @@ export const AboutView = () => {
                         Bra recept på god mat, helt enkelt.</h4>
       </div>
 
-      <div class="div3">
-        <img class = "img" src={foodLogotype2} alt={'..error'}/>
-        <h4 class="h43">FunFood samlar tusentals favoritrecept från  
-                      Aller Medias tidningar tillsammans med helt  
+      <div class="div">
+        <img class = "aboutimg" src={foodLogotype2} alt={'..error'}/>
+        <h4 class="h">FunFood samlar tusentals favoritrecept från  
+                      Medias tidningar tillsammans med helt  
                       nyutvecklade recept. Har du kycklingfiléer 
                       i frysen eller mangold i trädgårdslandet?  
                       Hos FunFood kan du enkelt söka efter recept med  
@@ -57,7 +56,7 @@ export const AboutView = () => {
       </div>
 
       <div>
-        <h4 class="h44">Gå till "Recipies" där du enkelt kan söka på ingrediens eller recept.</h4>
+        <h4 class="h1">Gå till "Recipies" där du enkelt kan söka på ingrediens eller recept.</h4>
       </div>
           <a class="jump-to-top" href="#">Jump To Top</a>
     </div>
