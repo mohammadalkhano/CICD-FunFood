@@ -9,12 +9,12 @@
     width: 80px;
 }
 
-.LogoType, .aboutButton, .contactButton {
+.LogoType, .button {
     align-self: center;
     cursor: pointer;
 }
 
-.aboutButton:hover, .contactButton:hover {
+.button:hover:hover {
     font-size: 130%;
   }
 
