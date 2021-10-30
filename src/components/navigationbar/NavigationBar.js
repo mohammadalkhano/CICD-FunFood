@@ -1,19 +1,21 @@
 import React from 'react'
-import './NavigationBar.css'
-import { useHistory } from 'react-router-dom'
-import LogoType from '../../shared/images/logotype.png'
+import MobileNavigation from '../navigationbar/mobilenavigation/MobileNavigation'
+import DesktopNavigation from '../navigationbar/desktopNavigation/DesktopNavigation'
+import { useWindowDimensions } from '../../hooks/useWindowDimensions'
+import DesktopMobileBreakpoint from "../../shared/global/DesktopMobileBreakpoint"
+ 
 
 export const NavigationBar = () => {
-    const history = useHistory()
+    const { width } = useWindowDimensions()
 
+    const displayNavigation = () => {
+        return width <= DesktopMobileBreakpoint.width ? <MobileNavigation/> : <DesktopNavigation/>
+    }
     return (
-        <div className="NavigationBarWrapper">
-            <img onClick={() => history.push('/')}
-                className="LogoType"
-                src={LogoType}
-                alt="oops" />
-            <span className="aboutButton" onClick={() => history.push('/AboutView')}>About</span>
-            <span className="contactButton" onClick={() => history.push('/ContactView')}>Contact</span>
+        <div>
+            {displayNavigation()}
+
         </div>
+        
     )
 }
