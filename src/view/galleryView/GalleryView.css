@@ -1,0 +1,47 @@
+ h3{
+     color: black;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px brown;
+     
+ }
+ .Pic1{
+    background-image: url(../../shared/images/Pic1.jfif);
+  }
+    .Pic2{
+    background-image: url(../../shared/images/Pic2.jpg);
+  }
+  .Pic3{
+    background-image: url(../../shared/images/Pic3.jpg);
+  }
+  .Pic5{
+    background-image: url(../../shared/images/Pic5.jpg);
+  }  
+  
+  .Pic6{
+    background-image: url(../../shared/images/Pic6.jpg);
+  }
+  
+  .Pic7{
+    background-image: url(../../shared/images/Pic7.jpg);
+  }
+  .Pic8{
+    background-image: url(../../shared/images/Pic8.jpg);
+  }
+
+
+  .picture{
+    width:180px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px 2px aqua;
+    margin: 10px 15px ; 
+    background-position: left;       
+  }
+  image
+  {
+    flex-basis: 60%;
+  }
+  
