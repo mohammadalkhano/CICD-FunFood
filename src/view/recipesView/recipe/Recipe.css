@@ -12,5 +12,7 @@ TODO:
 .css-83ijpv-MuiTypography-root:hover{
     color: black;   
 }
-
+.MuiCardHeader-title{
+    /* background-color: rgb(169, 202, 136); */
+}
 

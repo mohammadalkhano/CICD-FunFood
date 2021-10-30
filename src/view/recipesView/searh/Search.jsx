@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { useContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import {DisplayRecipe} from '../searh/DisplayRecipe'
-import {Recipe} from '../recipe/Recipe'
 import {ProgressBar} from '../../../components/progressBar/ProgressBar'
 import TextField from '@mui/material/TextField';
 import IconButton from "@material-ui/core/IconButton";
@@ -31,10 +30,12 @@ export const Search=()=> {
 	}, [recipes])
 
 	const getRecipes = async () => {
+		setLoading(true);
 		const response = await fetch(`https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&from=0&to=10&calories=591-722&health=alcohol-free`)
 		const data = await response.json()
 		setRecipes(data.hits)
 		console.log(data.hits)
+		setLoading(false);
 	}
 
 	const updateSearch = event => {
@@ -45,35 +46,22 @@ export const Search=()=> {
 		event.preventDefault()
 		setQuery(search)
 	}
-
-	// const displayData = () => {
-	// 	if (!loading) {
-	// 		return (
-	// 			<div className='recipe'>
-	// 				{recipes.map(recipe => (
-	// 					<Recipe key={recipe.recipe.label}
-	// 						title={recipe.recipe.label}
-	// 						cuisineType={recipe.recipe.cuisineType + " cuisine"}
-	// 						image={recipe.recipe.image}
-	// 						ingredients={recipe.recipe.ingredients}
-	// 						url={recipe.recipe.url} />))}
-	// 			</div>
-
-	// 		)
-	// 	}
-
-	// 	else {
-	// 		return <div><ProgressBar/></div>
-
-	// 	}
-	//}
+	const display=()=>{
+		if(!loading){
+			return(<DisplayRecipe recipes= {recipes}/>);
+		}
+		else {
+			return (<div><ProgressBar/></div>);
+		}
+	}
   return (
-   
+	
 		<div className='search-container'>
 			<div className='txt-field' >
                <TextField  onChange={updateSearch}
        				id="standard-bare"        
-        			variant="filled"
+        			variant="outlined"
+					color="success"
         			label={value}
        				InputProps={{
       					 endAdornment: (
@@ -84,8 +72,8 @@ export const Search=()=> {
       			 </InputAdornment>
      		 	)}}/>
 			 </div>	 	 
-		      {/* {displayData()}		 */}
-			  <DisplayRecipe recipes= {recipes}/>
+		      {display()}		
+			  {/* <DisplayRecipe recipes= {recipes}/> */}
 	     </div> 
   );
 }
