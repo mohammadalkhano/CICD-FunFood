@@ -1,7 +1,5 @@
 import './GalleryView.css'
 
-
-
 export const GalleryView = () => {
 
 	return (
@@ -24,6 +22,7 @@ export const GalleryView = () => {
 
 		</div>
 
+<<<<<<< HEAD
 		
 
 		
@@ -31,6 +30,9 @@ export const GalleryView = () => {
 		
 
 		
+=======
+			
+>>>>>>> ee64122f2726581dd348e42d15bdcc68315139db
 
 	)
 }
