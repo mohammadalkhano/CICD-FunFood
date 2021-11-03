@@ -21,9 +21,6 @@ export const GalleryView = () => {
 			</div>
 
 		</div>
-
-			
-
 	)
 }
 
