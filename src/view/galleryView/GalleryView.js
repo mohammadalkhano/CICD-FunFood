@@ -22,7 +22,17 @@ export const GalleryView = () => {
 
 		</div>
 
+<<<<<<< HEAD
+		
+
+		
+
+		
+
+		
+=======
 			
+>>>>>>> ee64122f2726581dd348e42d15bdcc68315139db
 
 	)
 }
