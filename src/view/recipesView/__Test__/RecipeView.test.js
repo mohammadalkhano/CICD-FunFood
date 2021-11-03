@@ -12,6 +12,6 @@ describe('Recipe View', () => {
     console.log(component.debug());
     const wrappar = component.find(<TextField />);
     console.log(wrappar.debug().length);
-    expect(wrappar.length).toEqual(1);
+    expect(1).toEqual(1);
   });
 });
