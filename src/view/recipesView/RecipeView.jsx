@@ -55,7 +55,7 @@ export const RecipeView = () => {
   return (
 	
 		<div className='search-container'>
-			<div className='txt-field' >
+			<div className='txt-field'>
                <TextField  onChange={updateSearch}
        				id="standard-bare"        
         			variant="outlined"
