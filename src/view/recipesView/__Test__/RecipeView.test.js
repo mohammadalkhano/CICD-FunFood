@@ -1,6 +1,5 @@
 // it('test name', function, timeout () => {expect(...).toBe(...)});
-import react from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { RecipeView } from '../RecipeView';
 import TextField from '@mui/material/TextField';
 
@@ -9,9 +8,9 @@ import TextField from '@mui/material/TextField';
 describe('Recipe View', () => {
   it('renders the recipe view', () => {
     const component = shallow(<RecipeView />);
-    console.log(component.debug());
+    // console.log(component.debug());
     const wrappar = component.find(<TextField />);
-    console.log(wrappar.debug().length);
+    // console.log(wrappar.debug().length);
     expect(1).toEqual(1);
   });
 });
