@@ -23,7 +23,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
+    - run: npm install
     - run: npm run build --if-present       
       env:
         CI: false
@@ -44,3 +44,20 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         pr_label: "feature, automated pr"
         pr_title: "Staging"
+
+  # deploymentProduction:
+  #   needs: build-and-test
+  #   runs-on: ubuntu-latest
+  #   environment:
+  #     name: Production
+  #     url: https://github.com 
+  #   steps:
+  #   - name: Check out repository code
+  #     uses: actions/checkout@v2
+  #   - name: pull-request
+  #     uses: repo-sync/pull-request@v2
+  #     with:
+  #       destination_branch: "Staging"
+  #       github_token: ${{ secrets.GITHUB_TOKEN }}
+  #       pr_label: "feature, automated pr"
+  #       pr_title: "Production"      
