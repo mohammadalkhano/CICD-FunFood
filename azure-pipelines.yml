@@ -5,26 +5,14 @@
 
 trigger:
 - Developer
-strategy:
-  matrix:
-    linux:
-      imageName: 'ubuntu-latest'
-    mac:
-      imageName: 'macOS-latest'
-    windows:
-      imageName: 'windows-latest'
-  
-    node_v:
-      node_version: 16.x
-         
 
 pool:
-  vmImage: $(imageName)
+  vmImage: ubuntu-latest
 
 steps:
 - task: NodeTool@0
   inputs:
-    versionSpec: $(node_version)
+    versionSpec: '16.x'
   displayName: 'Install Node.js'
 
 - script: |
@@ -36,7 +24,7 @@ steps:
     npm run build
       
   displayName: 'build'
-
+  
 - script: 
     npm run test
   displayName: 'test'  
