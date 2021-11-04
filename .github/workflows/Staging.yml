@@ -1,11 +1,11 @@
 # This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
-name: Build and Deploy
+name: Build, Test and Deploy/Delevery
 
 on: 
   push:
-    branches: [ Staging ]
+    branches: [ Staging, Pre-production ]
     
 jobs:
   build-and-test:
@@ -28,6 +28,8 @@ jobs:
       env:
         CI: false
 
+#Deployment Staging     
+
   deploymentStaging:
     needs: build-and-test
     runs-on: ubuntu-latest
@@ -45,19 +47,40 @@ jobs:
         pr_label: "feature, automated pr"
         pr_title: "Staging"
 
-  # deploymentProduction:
-  #   needs: build-and-test
-  #   runs-on: ubuntu-latest
-  #   environment:
-  #     name: Production
-  #     url: https://github.com 
-  #   steps:
-  #   - name: Check out repository code
-  #     uses: actions/checkout@v2
-  #   - name: pull-request
-  #     uses: repo-sync/pull-request@v2
-  #     with:
-  #       destination_branch: "Staging"
-  #       github_token: ${{ secrets.GITHUB_TOKEN }}
-  #       pr_label: "feature, automated pr"
-  #       pr_title: "Production"      
+#Deployment Pre-Pro       
+
+  deploymentPre-production:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    environment:
+      name: Pre-production
+      url: https://github.com 
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "Pre-production"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_label: "feature, automated pr"
+        pr_title: "Pre-production"
+
+#Deployment Production
+
+  deploymentProduction:
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://github.com 
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "Production"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_label: "feature, automated pr"
+        pr_title: "Production"      
