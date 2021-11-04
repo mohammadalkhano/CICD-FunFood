@@ -14,8 +14,8 @@ strategy:
     windows:
       imageName: 'windows-latest'
   
-    node_x:
-      node_version: [12.x, 14.x,16.x]
+    node_v:
+      node_version: 16.x
          
 
 pool:
