@@ -31,7 +31,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --watchAll --config node_modules/ca-ui-module-test/__jestDist__/jest.config",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
