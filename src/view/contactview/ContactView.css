@@ -11,7 +11,7 @@ div {
   color: black;
   line-height: 2;
 }
-.under_rubrik {
+.under_rubrik, .under_rubrik1 {
   font-size: 35px;
 }
 
