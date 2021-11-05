@@ -63,7 +63,7 @@ jobs:
     - name: pull-request
       uses: repo-sync/pull-request@v2
       with:
-        destination_branch: "Pre-production"
+        destination_branch: "Production"
         github_token: ${{ secrets.GITHUB_TOKEN }}
         pr_label: "feature, automated pr"
         pr_title: "Pre-production"
