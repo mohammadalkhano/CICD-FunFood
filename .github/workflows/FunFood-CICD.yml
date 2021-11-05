@@ -70,7 +70,7 @@ jobs:
 
 #Deployment Production
 
-  DeploymentProduction:
+  DeliveryProduction:
     needs: DeliveryStaging
     runs-on: ubuntu-latest
     environment:
@@ -85,4 +85,23 @@ jobs:
         destination_branch: "Production"
         github_token: ${{ secrets.GITHUB_TOKEN }}
         pr_label: "feature, automated pr"
-        pr_title: "Production"      
+        pr_title: "Production"
+        
+ #Deployment Production
+
+  DeploymentProduction:
+    needs: DeploymentPre-production
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://github.com 
+    steps:
+    - name: Check out repository code
+      uses: actions/checkout@v2
+    - name: pull-request
+      uses: repo-sync/pull-request@v2
+      with:
+        destination_branch: "Production"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        pr_label: "feature, automated pr"
+        pr_title: "Production"       
