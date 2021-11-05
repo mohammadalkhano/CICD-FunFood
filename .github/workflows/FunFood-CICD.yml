@@ -30,7 +30,7 @@ jobs:
 
 #DeliveryStaging     
 
-  DeliveryStaging ⏳:
+  DeliveryStaging:
     needs: build-and-test
     if: github.ref == 'refs/heads/Staging'    
     runs-on: ubuntu-latest
@@ -50,7 +50,7 @@ jobs:
 
 #Deployment Pre-Pro       
 
-  DeploymentPre-production 🚀:
+  DeploymentPre-production:
     needs: build-and-test
     if: github.ref == 'refs/heads/Pre-production'
     runs-on: ubuntu-latest
@@ -70,7 +70,7 @@ jobs:
 
 #Deployment Production
 
-  DeploymentProduction 👋:
+  DeploymentProduction:
     needs: DeliveryStaging
     runs-on: ubuntu-latest
     environment:
