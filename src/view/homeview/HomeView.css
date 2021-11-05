@@ -37,6 +37,7 @@ font-size: 65px;
   outline: none;
   margin-top: 30px;
   transition: transform 0.4s;
+  cursor: pointer;
 }
 .card{
   width:200px;
@@ -52,7 +53,7 @@ font-size: 65px;
   transition: transform 0.4s;
 }
 .card1{
-  background-image: url(../../shared/images/image-1.jpg);
+  background-image: url(../../shared/images/image-3.jpg);
 }
 .card2{
   background-image: url(../../shared/images/image-2.jpg);
@@ -65,7 +66,4 @@ font-size: 65px;
 }
 .card:hover, .home-button:hover{
   transform: translateY(-10px);
-}
-.h5{
-  color: #fff;
 }

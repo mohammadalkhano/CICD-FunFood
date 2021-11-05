@@ -1,5 +1,5 @@
 import React from 'react';
-import {Recipe} from '../recipe/Recipe'
+import {Recipe} from './Recipe'
 
 export const DisplayRecipe=({recipes})=> {
 
