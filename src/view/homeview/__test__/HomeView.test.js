@@ -22,15 +22,4 @@ describe('HomeView', () => {
 
     });
 });
-    /*describe('HomeView', () => {
-        it('should be true', () =>{
-            const prov =true;
-            expect(prov).toBe(true);
-        
-        });
-        it('should be false', () =>{
-            const prov =true;
-            expect(prov).toBe(false);
-        })
-});*/
 
