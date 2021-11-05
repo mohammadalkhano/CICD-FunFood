@@ -18,7 +18,6 @@ describe('ContactView', () => {
 
         it('should show h4 title', () => {
             const wrapper =shallow(<ContactView />);
-            console.log(wrapper.debug());
             const text =wrapper.find('h4.under_rubrik1');
             const result = text.text();
             expect(result).toBe("För konsumenter");
@@ -35,7 +34,6 @@ describe('ContactView', () => {
 
         it('should show text1', () => {
             const wrapper =shallow(<ContactView />);
-            console.log(wrapper.debug());
             const text =wrapper.find('h6');
             const result = text.text();
             expect(result).toBe('FunFood Forum hjälper dig genom att svara på frågor kring FunFoods produkter och kampanjer. ');
