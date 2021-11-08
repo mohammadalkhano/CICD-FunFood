@@ -1,17 +1,21 @@
 .recipe{
+    background-color: rgba(169, 169, 169, 0.116);
     display: inline-grid;   
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    /* grid-row-gap: 2px;  */
+    grid-row-gap: 20px;
+    grid-column-gap:20px ;
+    justify-items: center;
+    
+    
 } 
+/* .cardItem{
+    width: 300px;
+} */
 .css-et1ao3-MuiTypography-root:hover{
    color: black;
 }
 .css-83ijpv-MuiTypography-root:hover{
     color: black;   
-}
-.MuiCardHeader-title{
-    /* background-color: rgb(169, 202, 136); */
 }
 

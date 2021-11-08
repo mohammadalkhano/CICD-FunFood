@@ -13,17 +13,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import { makeStyles } from '@material-ui/core/styles';
 import './Recipe.css';
-
-const useStyles = makeStyles({
-  continer: {
-    '&:hover': {
-      // backgroundColor: 'red',
-    },
-  },
-  item: {},
-});
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -42,9 +32,9 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
-  const classes = useStyles();
+
   return (
-    <Card className={classes.continer} sx={{ maxWidth: 345 }}>
+    <Card className="cardItem">
       <CardHeader
         // style={{ backgroundColor: 'none' }}
         // sx={{ '&:hover': { backgroundColor: 'transparent' } }}

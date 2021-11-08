@@ -1,5 +1,5 @@
 .search-container { 
-    display: grid;     
+    display: grid;       
     /* background-color: rgb(34, 29, 26); */
     
  }
@@ -7,11 +7,6 @@
     display: grid;
     margin: 23px 10px 0px 10px;
 
-}
-
-.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
-   
-    /* background-color: black; */
 }
 .css-sqs87j-MuiInputBase-root-MuiOutlinedInput-root{
    margin-top: 2px;
