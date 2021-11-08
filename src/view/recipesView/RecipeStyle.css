@@ -5,14 +5,10 @@
  }
  .txt-field{
     display: grid;
+    margin: 23px 10px 0px 10px;
+
 }
- .recipe{
-    display: inline-grid;   
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    /* grid-row-gap: 2px;  */
-} 
+
 .css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
    
     /* background-color: black; */
