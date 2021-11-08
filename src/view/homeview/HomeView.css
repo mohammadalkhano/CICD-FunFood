@@ -10,9 +10,8 @@
 }
 
 .row{
-  display: flex;
+  display: -ms-inline-grid;
   height: 100%;
-  padding-top: 5%;
 }
 .col{
   flex-basis: 100%;
@@ -51,6 +50,7 @@ font-size: 65px;
   background-position: center;
   background-size: cover;
   transition: transform 0.4s;
+  bottom: 15px;
 }
 .card1{
   background-image: url(../../shared/images/image-3.jpg);
@@ -63,6 +63,9 @@ font-size: 65px;
 }
 .card4{
   background-image: url(../../shared/images/image-5.jpg);
+}
+.card5{
+  background-image: url(../../shared/images/image-6.jpg);
 }
 .card:hover, .home-button:hover{
   transform: translateY(-10px);

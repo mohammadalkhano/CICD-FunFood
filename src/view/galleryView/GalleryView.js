@@ -13,7 +13,7 @@ export const GalleryView = () => {
 			<div className="picture Pic6"> </div>			
 			<div className="picture Pic7"> </div>			
 			<div className="picture Pic8"> </div>
-		
+			<br/><br/><br/>
 
 		</div>
 	)
