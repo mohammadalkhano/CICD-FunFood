@@ -1,17 +1,27 @@
-// it('test name', function, timeout () => {expect(...).toBe(...)});
-import react from 'react';
-import { shallow, mount } from 'enzyme';
-import { RecipeView } from '../RecipeView';
-import TextField from '@mui/material/TextField';
 
 // it('test name', function, timeout () => {expect(...).toBe(...)});
+
+import { RecipeView } from '../RecipeView';
+import { configure, shallow } from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
+configure({ adapter: new Adapter() });
+// it('test name', function, timeout () => {expect(...).toBe(...)});
+
 
 describe('Recipe View', () => {
-  it('renders the recipe view', () => {
+  it('renders the text fileds count', () => {
     const component = shallow(<RecipeView />);
-    console.log(component.debug());
-    const wrappar = component.find(<TextField />);
-    console.log(wrappar.debug().length);
-    expect(1).toEqual(1);
+
+    const wrapper = component.find('ForwardRef(TextField)');
+    const result = wrapper.exists();
+    console.log(result);
+    expect(result).toBeTruthy();
   });
+  // it('simulates the search icon onClick', () => {
+  //   const component = shallow(<RecipeView />);
+  //   const wrapper = component.find('');
+  //   const result = wrapper.exists();
+  //   console.log(result);
+  //   expect(result).toBeTruthy();
+  // });
 });

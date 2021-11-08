@@ -11,18 +11,18 @@ export const ContactView = () => {
     return (
         <div>
             <br/><br/>
-            <h4 className="under_rubrik">För konsumenter</h4>
+            <h4 className="under_rubrik1">För konsumenter</h4>
 
             <img className = "img" src={contactmail} alt={'..error'}/>
 
-            <h4> Mail: funfood93@gmail.com </h4>
+            <h4 className="mail"> Mail: funfood93@gmail.com </h4>
 
-            <h5>FunFood Forum hjälper dig genom att svara på frågor <br/>
-                kring FunFoods produkter och kampanjer. </h5>
+            <h6>FunFood Forum hjälper dig genom att svara på frågor <br/>
+                kring FunFoods produkter och kampanjer. </h6>
             
             <img className = "img" src={contactphone} alt={'..error'}/>
 
-            <h4>Telefon 0733** </h4>
+            <h4 className="phone">Telefon 0733** </h4>
 
             <h5>Våra telefontider är Måndag - Fredag  <br/>
             klockan 13:00-16:00. <br/>
