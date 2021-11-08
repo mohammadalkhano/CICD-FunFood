@@ -56,6 +56,7 @@ export const AboutView = () => {
 
       <div>
         <h4 class="h1">Gå till "Recipies" där du enkelt kan söka på ingrediens eller recept.</h4>
+      <br/><br/><br/>
       </div>
 
     </div>

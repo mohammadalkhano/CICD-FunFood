@@ -18,9 +18,7 @@ export const DisplayRecipe=({recipes})=> {
 			)
 		
 	}
-    return (
-        <div>
-          {displayData()}
-        </div>
+    return (        
+          displayData()       
     )
 }
