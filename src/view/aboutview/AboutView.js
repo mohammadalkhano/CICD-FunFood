@@ -7,12 +7,11 @@ import foodLogotype2 from '../../shared/images/foodLogotype2.jpg'
 export const AboutView = () => {
     return (
     <div>
-      <h3>FunFood är för hemma kockar som behöver lite inspiration, <br/>
-        med mat för alla tillfällen.</h3>
+      <h3 className="Rubrik">FunFood är för hemma kockar som behöver lite inspiration, <br/>med mat för alla tillfällen.</h3>
 
         <div class="div">
         <img class = "aboutimg" src={foodLogotype} alt={'..error'}/>                    
-        <h4 class="h">Välj bland våra receptfavoriter och dela vår 
+        <h4 className="sektion1">Välj bland våra receptfavoriter och dela vår 
                       passion för den godaste maten. Här finns middagstips, 
                       goda bakverk, mättande mellis och festmenyer. 
                       Vi har samlat middagstips för så väl jäktiga vardagar 
@@ -57,8 +56,9 @@ export const AboutView = () => {
 
       <div>
         <h4 class="h1">Gå till "Recipies" där du enkelt kan söka på ingrediens eller recept.</h4>
+      <br/><br/><br/>
       </div>
-          <a class="jump-to-top" href="#">Jump To Top</a>
+
     </div>
 
     )

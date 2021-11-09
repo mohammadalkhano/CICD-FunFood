@@ -1,30 +1,18 @@
-.recipe{
-     /* background-color: #ffffff;
-    background-image: linear-gradient(315deg, #f6f6f6 0%, #f6f5f5 74%);
-     
-     display: grid;
-     grid-template-columns: repeat(0, 1fr);
-     grid-auto-columns: 400px; */
+.search-container { 
+    display: grid;       
+    /* background-color: rgb(34, 29, 26); */
     
-  
-    
-     
+ }
+ .txt-field{
+    display: grid;
+    margin: 23px 10px 0px 10px;
+
 }
-.search-btn{
-    grid-column-start: 3;
-    grid-column-end: 6;  
-    grid-row-start: 1;
-    grid-row-end: 2;  
+.css-sqs87j-MuiInputBase-root-MuiOutlinedInput-root{
+   margin-top: 2px;
 }
-.item1{
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.item2{
-    grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
+/*.item3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+} */
+
