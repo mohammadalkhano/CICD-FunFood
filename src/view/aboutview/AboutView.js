@@ -61,10 +61,8 @@ export const AboutView = () => {
         <h4 class="h1">Gå till "Recipies" där du enkelt kan söka på ingrediens eller recept.</h4>
         <button className="button" onClick={() => hestory.push(RoutingPath.recipeView)}>Recipes</button>
         <button className="button" ><a href="#">Jump To Top</a></button>
-        <br /><br /><br /><br /><br />
+        <br /><br />
       </div>
-
     </div>
-
   )
 }
