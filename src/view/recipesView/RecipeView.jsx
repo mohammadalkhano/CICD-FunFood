@@ -65,7 +65,7 @@ export const RecipeView = () => {
       					 endAdornment: (
      			 <InputAdornment >
        				 <IconButton  >
-        			   <SearchIcon onClick={getSearch} />
+        			   <SearchIcon className="searchIcon" onClick={getSearch} />
        				 </IconButton>
       			 </InputAdornment>
      		 	)}}/>

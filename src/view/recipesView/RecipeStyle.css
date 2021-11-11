@@ -1,21 +1,12 @@
 .search-container { 
-    display: grid;     
+    display: grid;       
     /* background-color: rgb(34, 29, 26); */
-    
+    padding-bottom: 100%;
  }
  .txt-field{
     display: grid;
-}
- .recipe{
-    display: inline-grid;   
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 20px;
-    /* grid-row-gap: 2px;  */
-} 
-.css-nxo287-MuiInputBase-input-MuiOutlinedInput-input{
-   
-    /* background-color: black; */
+    margin: 23px 10px 0px 10px;
+
 }
 .css-sqs87j-MuiInputBase-root-MuiOutlinedInput-root{
    margin-top: 2px;
