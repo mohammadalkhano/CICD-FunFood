@@ -1,8 +1,6 @@
 name: Create Release
 
-on:
-  push:
-    branches: [ Production ]
+on:  
   pull_request:
     branches: [ Production ]
 
@@ -24,6 +22,7 @@ jobs:
         with:
           tag_name: ${{ github.ref }}
           release_name: Release ${{ github.ref }}
+          tag_prefix: v
           body: |
             Changes in this Release
             - First Change
