@@ -1,5 +1,6 @@
 .footer{
-  position: fixed;
+  position: relative;
+  display: inline-block;
   left: 0;
   bottom: 0;
   height: 5vw;
