@@ -1,7 +1,7 @@
 .search-container { 
     display: grid;       
     /* background-color: rgb(34, 29, 26); */
-    
+    padding-bottom: 100%;
  }
  .txt-field{
     display: grid;
