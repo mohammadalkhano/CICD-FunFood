@@ -30,13 +30,13 @@ jobs:
 
 #DeliveryStaging     
 
-  DeliveryStaging ⏳:
+  DeliveryStaging :
     needs: build-and-test
     if: github.ref == 'refs/heads/Staging'    
     runs-on: ubuntu-latest
     environment:
       name: Staging
-      url: https://github.com 
+      url: https://funfoods.netlify.app
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
@@ -50,13 +50,13 @@ jobs:
 
 #Deployment Pre-Pro       
 
-  DeploymentPre-production 🚀:
+  DeploymentPre-production :
     needs: build-and-test
     if: github.ref == 'refs/heads/Pre-production'
     runs-on: ubuntu-latest
     environment:
       name: Pre-production
-      url: https://github.com 
+      url: https://funfoods.netlify.app 
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
@@ -70,12 +70,12 @@ jobs:
 
 #Deployment Production
 
-  DeploymentProduction 👋:
+  DeploymentProduction :
     needs: DeliveryStaging
     runs-on: ubuntu-latest
     environment:
       name: Production
-      url: https://github.com 
+      url: https://funfoods.netlify.app 
     steps:
     - name: Check out repository code
       uses: actions/checkout@v2
@@ -85,4 +85,20 @@ jobs:
         destination_branch: "Production"
         github_token: ${{ secrets.GITHUB_TOKEN }}
         pr_label: "feature, automated pr"
-        pr_title: "Production"      
+        pr_title: "Production" 
+
+    - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          tag_prefix: v
+          body: |
+            Changes in this Release
+            - First Change
+            - Second Change
+          draft: false
+          prerelease: false
