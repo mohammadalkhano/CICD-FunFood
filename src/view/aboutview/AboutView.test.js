@@ -14,7 +14,7 @@ describe('AboutView', () => {
         expect(result).toBe('FunFood är för hemma kockar som behöver lite inspiration, med mat för alla tillfällen.');
     });
 
-    it('should show text', () => {
+    it('should show text in about view sektion1', () => {
         const wrapper = shallow(<AboutView />);
         const text =wrapper.find('h4.sektion1');
         const result = text.text();
