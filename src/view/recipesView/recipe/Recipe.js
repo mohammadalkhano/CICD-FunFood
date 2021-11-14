@@ -94,7 +94,7 @@ export const Recipe = ({ title, image, ingredients, url, cuisineType }) => {
             {
               <ol>
                 {ingredients.map((ingredient) => (
-                  <ol>{ingredient.text} </ol>
+                  <ol>{ingredient?.text} </ol>
                 ))}
               </ol>
             }
