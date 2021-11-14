@@ -12,7 +12,7 @@ export const DisplayRecipe=({recipes})=> {
 							title={recipe.recipe.label}
 							cuisineType={recipe.recipe.cuisineType + " cuisine"}
 							image={recipe.recipe.image}
-							ingredients={recipe.recipe.ingredients}
+							ingredients={recipe?.recipe?.ingredients}
 							url={recipe.recipe.url} />))}
 				</div>
 			)
