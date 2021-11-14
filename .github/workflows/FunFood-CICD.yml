@@ -71,7 +71,7 @@ jobs:
 #Deployment Production
 
   DeploymentProduction :
-    needs: DeliveryStaging
+    needs: DeploymentPre-production
     runs-on: ubuntu-latest
     environment:
       name: Production
